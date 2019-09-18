@@ -28,6 +28,11 @@ namespace VideoGameStore.Controllers
 
             return View();
         }
+        public IActionResult Example (String Genre,String Name)
+        {
+            ViewData["Message"] = "You've entered Genre: " + Genre +" Name: " + Name;
+            return View();
+        }
 
         public IActionResult Privacy()
         {
